@@ -1,0 +1,134 @@
+{
+    "tickets": [
+        {
+            "id": "1",
+            "title": "Set up React Router",
+            "description": "Initialize React Router with data routers for the main layout.",
+            "status": "done",
+            "assigneeId": "u1",
+            "priority": "high"
+        },
+        {
+            "id": "2",
+            "title": "Build Board Layout",
+            "description": "Create the main columns (To Do, In Progress, Done).",
+            "status": "in-progress",
+            "assigneeId": "u2",
+            "priority": "medium"
+        },
+        {
+            "id": "3",
+            "title": "Implement useQuery for tickets",
+            "description": "Fetch initial tickets using React Query and Router Loaders.",
+            "status": "in-progress",
+            "assigneeId": "u1",
+            "priority": "high"
+        },
+        {
+            "id": "4",
+            "title": "Build Ticket Component",
+            "description": "Create individual ticket cards with React.memo.",
+            "status": "todo",
+            "assigneeId": "u3",
+            "priority": "medium"
+        },
+        {
+            "id": "5",
+            "title": "Implement Ticket Modal",
+            "description": "Create modal for editing tickets. Use useRef for auto-focus.",
+            "status": "todo",
+            "assigneeId": null,
+            "priority": "low"
+        },
+        {
+            "id": "6",
+            "title": "Optimistic UI for moving tickets",
+            "description": "Use React Query onMutate to instantly update UI when moving tickets.",
+            "status": "todo",
+            "assigneeId": "u2",
+            "priority": "high"
+        },
+        {
+            "id": "7",
+            "title": "Performance Optimization",
+            "description": "Use React Profiler, React.memo, and useCallback to fix lag.",
+            "status": "todo",
+            "assigneeId": null,
+            "priority": "medium"
+        },
+        {
+            "id": "8",
+            "title": "Router Form for New Tickets",
+            "description": "Use React Router <Form> and action functions to handle ticket creation.",
+            "status": "todo",
+            "assigneeId": "u1",
+            "priority": "high"
+        }
+    ],
+    "users": [
+        {
+            "id": "u1",
+            "name": "Alex Chen",
+            "email": "alex@company.com",
+            "role": "Admin",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u1"
+        },
+        {
+            "id": "u2",
+            "name": "Sarah Johnson",
+            "email": "sarah@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u2"
+        },
+        {
+            "id": "u3",
+            "name": "Marcus Williams",
+            "email": "marcus@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u3"
+        },
+        {
+            "id": "u4",
+            "name": "Emily Rodriguez",
+            "email": "emily@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u4"
+        },
+        {
+            "id": "u5",
+            "name": "David Kim",
+            "email": "david@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u5"
+        },
+        {
+            "id": "u6",
+            "name": "Jessica Taylor",
+            "email": "jessica@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u6"
+        },
+        {
+            "id": "u7",
+            "name": "Ryan Patel",
+            "email": "ryan@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u7"
+        },
+        {
+            "id": "u8",
+            "name": "Olivia Martinez",
+            "email": "olivia@company.com",
+            "role": "Member",
+            "password": "password123",
+            "avatar": "https://i.pravatar.cc/150?u=u8"
+        }
+    ]
+}
