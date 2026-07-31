@@ -1,0 +1,29 @@
+.column {
+    flex: 1;
+    min-width: 260px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  
+  .column-header {
+    margin-bottom: 14px;
+  }
+  
+  .column-header h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .column-header .count {
+    background: #e2e8f0;
+    color: #475569;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  

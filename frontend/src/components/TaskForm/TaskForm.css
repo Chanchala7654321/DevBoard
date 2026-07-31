@@ -1,0 +1,162 @@
+/* Container */
+
+.task-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  /* Full Width */
+  
+  .full-width {
+    grid-column: 1 / -1;
+  }
+  
+  /* Form Group */
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label */
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+  }
+  
+  /* Inputs */
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    background: #fff;
+  }
+  
+  /* Focus */
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+  
+  /* Textarea */
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Labels Container */
+  
+  .label-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Label Button */
+  
+  .label {
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    color: #374151;
+    padding: 8px 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .label:hover {
+    background: #eff6ff;
+    border-color: #2563eb;
+  }
+  
+  /* Active Label */
+  
+  .label.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+  }
+  
+  /* Button Group */
+  
+  .button-group {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Save Button */
+  
+  .save-btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .save-btn:hover {
+    background: #1d4ed8;
+  }
+  
+  /* Cancel Button */
+  
+  .cancel-btn {
+    background: #f3f4f6;
+    color: #374151;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background: #e5e7eb;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 768px) {
+    .task-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .button-group {
+      justify-content: stretch;
+      flex-direction: column;
+    }
+  
+    .save-btn,
+    .cancel-btn {
+      width: 100%;
+    }
+  }
