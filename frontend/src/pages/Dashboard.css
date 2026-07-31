@@ -1,0 +1,28 @@
+.dashboard {
+    margin-left: 240px;
+    margin-top: 70px;
+    padding: 25px;
+    background: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .dashboard-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 420px;
+  }
