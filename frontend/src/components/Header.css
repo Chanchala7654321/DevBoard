@@ -1,0 +1,205 @@
+.header{
+  height:70px;
+  background:#fff;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 30px;
+
+  border-bottom:1px solid #e5e7eb;
+
+  margin-left:240px;
+}
+
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.menu-btn{
+  width:40px;
+  height:40px;
+
+  border:none;
+  background:transparent;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.menu-btn svg{
+  font-size:24px;
+  color:#6b7280;
+}
+
+.menu-btn:hover{
+  background:#f3f4f6;
+}
+
+.header-left h2{
+  font-size:24px;
+  color:#111827;
+}
+
+/* Right */
+
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+/* Search */
+
+.search-box{
+  position:relative;
+}
+
+.search-box input{
+  width:280px;
+  height:42px;
+
+  border:1px solid #d1d5db;
+  border-radius:10px;
+
+  outline:none;
+
+  padding-left:45px;
+  padding-right:40px;
+
+  font-size:14px;
+}
+
+.search-box input:focus{
+  border-color:#2563eb;
+}
+
+.search-icon{
+  position:absolute;
+
+  left:15px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  color:#9ca3af;
+
+  font-size:18px;
+}
+
+.search-box kbd{
+  position:absolute;
+
+  right:12px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  background:#f3f4f6;
+
+  padding:2px 6px;
+
+  border-radius:5px;
+
+  color:#6b7280;
+
+  font-size:12px;
+}
+
+/* Notification */
+
+.notification-btn{
+  width:42px;
+  height:42px;
+
+  border:none;
+
+  background:transparent;
+
+  border-radius:10px;
+
+  position:relative;
+
+  cursor:pointer;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.notification-btn:hover{
+  background:#f3f4f6;
+}
+
+.notification-btn svg{
+  font-size:23px;
+  color:#4b5563;
+}
+
+.dot{
+  width:8px;
+  height:8px;
+
+  background:red;
+
+  border-radius:50%;
+
+  position:absolute;
+
+  right:11px;
+  top:10px;
+}
+
+/* Profile */
+
+.profile{
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  cursor:pointer;
+
+  padding:6px 10px;
+
+  border-radius:10px;
+}
+
+.profile:hover{
+  background:#f3f4f6;
+}
+
+.avatar{
+  width:35px;
+  height:35px;
+
+  border-radius:50%;
+
+  background:#2563eb;
+
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-weight:600;
+}
+
+.name{
+  font-size:15px;
+  color:#374151;
+}
+
+.profile svg{
+  font-size:20px;
+  color:#6b7280;
+}
