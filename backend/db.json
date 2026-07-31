@@ -1,134 +1,139 @@
 {
-    "tickets": [
-        {
-            "id": "1",
-            "title": "Set up React Router",
-            "description": "Initialize React Router with data routers for the main layout.",
-            "status": "done",
-            "assigneeId": "u1",
-            "priority": "high"
-        },
-        {
-            "id": "2",
-            "title": "Build Board Layout",
-            "description": "Create the main columns (To Do, In Progress, Done).",
-            "status": "in-progress",
-            "assigneeId": "u2",
-            "priority": "medium"
-        },
-        {
-            "id": "3",
-            "title": "Implement useQuery for tickets",
-            "description": "Fetch initial tickets using React Query and Router Loaders.",
-            "status": "in-progress",
-            "assigneeId": "u1",
-            "priority": "high"
-        },
-        {
-            "id": "4",
-            "title": "Build Ticket Component",
-            "description": "Create individual ticket cards with React.memo.",
-            "status": "todo",
-            "assigneeId": "u3",
-            "priority": "medium"
-        },
-        {
-            "id": "5",
-            "title": "Implement Ticket Modal",
-            "description": "Create modal for editing tickets. Use useRef for auto-focus.",
-            "status": "todo",
-            "assigneeId": null,
-            "priority": "low"
-        },
-        {
-            "id": "6",
-            "title": "Optimistic UI for moving tickets",
-            "description": "Use React Query onMutate to instantly update UI when moving tickets.",
-            "status": "todo",
-            "assigneeId": "u2",
-            "priority": "high"
-        },
-        {
-            "id": "7",
-            "title": "Performance Optimization",
-            "description": "Use React Profiler, React.memo, and useCallback to fix lag.",
-            "status": "todo",
-            "assigneeId": null,
-            "priority": "medium"
-        },
-        {
-            "id": "8",
-            "title": "Router Form for New Tickets",
-            "description": "Use React Router <Form> and action functions to handle ticket creation.",
-            "status": "todo",
-            "assigneeId": "u1",
-            "priority": "high"
-        }
+    "dashboard": {
+      "totalTickets": 25,
+      "todo": 10,
+      "progress": 6,
+      "blocked": 2,
+      "review": 2,
+      "done": 5
+    },
+  
+    "tickets": [],
+  
+    "activities": [],
+  
+    "deadlines": [],
+  
+    "projects": [
+      {
+        "id": 1,
+        "name": "AgileTrack",
+        "description": "Task Management Application",
+        "status": "Active"
+      }
     ],
-    "users": [
-        {
-            "id": "u1",
-            "name": "Alex Chen",
-            "email": "alex@company.com",
-            "role": "Admin",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u1"
-        },
-        {
-            "id": "u2",
-            "name": "Sarah Johnson",
-            "email": "sarah@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u2"
-        },
-        {
-            "id": "u3",
-            "name": "Marcus Williams",
-            "email": "marcus@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u3"
-        },
-        {
-            "id": "u4",
-            "name": "Emily Rodriguez",
-            "email": "emily@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u4"
-        },
-        {
-            "id": "u5",
-            "name": "David Kim",
-            "email": "david@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u5"
-        },
-        {
-            "id": "u6",
-            "name": "Jessica Taylor",
-            "email": "jessica@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u6"
-        },
-        {
-            "id": "u7",
-            "name": "Ryan Patel",
-            "email": "ryan@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u7"
-        },
-        {
-            "id": "u8",
-            "name": "Olivia Martinez",
-            "email": "olivia@company.com",
-            "role": "Member",
-            "password": "password123",
-            "avatar": "https://i.pravatar.cc/150?u=u8"
-        }
+  
+    "team": [
+      {
+        "id": 1,
+        "name": "Alex Chen",
+        "avatar": "AC",
+        "role": "Frontend Developer"
+      },
+      {
+        "id": 2,
+        "name": "Sarah Johnson",
+        "avatar": "SJ",
+        "role": "Backend Developer"
+      },
+      {
+        "id": 3,
+        "name": "David Kim",
+        "avatar": "DK",
+        "role": "Full Stack Developer"
+      },
+      {
+        "id": 4,
+        "name": "John Taylor",
+        "avatar": "JT",
+        "role": "UI Designer"
+      }
+    ],
+  
+    "tasks": [
+      {
+        "id": "AG-1001",
+        "title": "Design Login Page",
+        "description": "Create a responsive login page with validation.",
+        "status": "todo",
+        "priority": "High",
+        "category": "Feature",
+        "storyPoints": 5,
+        "dueDate": "2026-08-05",
+        "createdAt": "2026-07-28",
+        "assignee": "Alex Chen",
+        "avatar": "AC",
+        "tags": ["UI", "Authentication"]
+      },
+      {
+        "id": "AG-1002",
+        "title": "Create Registration Page",
+        "description": "Build signup page with form validation.",
+        "status": "todo",
+        "priority": "Medium",
+        "category": "Feature",
+        "storyPoints": 3,
+        "dueDate": "2026-08-08",
+        "createdAt": "2026-07-29",
+        "assignee": "Sarah Johnson",
+        "avatar": "SJ",
+        "tags": ["UI"]
+      },
+      {
+        "id": "AG-1003",
+        "title": "Dashboard Statistics",
+        "description": "Fetch dashboard analytics from API.",
+        "status": "progress",
+        "priority": "High",
+        "category": "Development",
+        "storyPoints": 8,
+        "dueDate": "2026-08-10",
+        "createdAt": "2026-07-30",
+        "assignee": "David Kim",
+        "avatar": "DK",
+        "tags": ["API", "Dashboard"]
+      },
+      {
+        "id": "AG-1004",
+        "title": "JWT Authentication",
+        "description": "Implement login authentication using JWT.",
+        "status": "blocked",
+        "priority": "Critical",
+        "category": "Security",
+        "storyPoints": 8,
+        "dueDate": "2026-08-12",
+        "createdAt": "2026-07-30",
+        "assignee": "Alex Chen",
+        "avatar": "AC",
+        "tags": ["JWT", "Security"]
+      },
+      {
+        "id": "AG-1005",
+        "title": "Responsive Sidebar",
+        "description": "Fix sidebar responsiveness for tablets.",
+        "status": "review",
+        "priority": "Low",
+        "category": "UI",
+        "storyPoints": 2,
+        "dueDate": "2026-08-06",
+        "createdAt": "2026-07-27",
+        "assignee": "John Taylor",
+        "avatar": "JT",
+        "tags": ["Responsive"]
+      },
+      {
+        "id": "AG-1006",
+        "title": "Deploy Backend API",
+        "description": "Deploy Express server to Render.",
+        "status": "done",
+        "priority": "Medium",
+        "category": "Deployment",
+        "storyPoints": 3,
+        "dueDate": "2026-08-01",
+        "createdAt": "2026-07-25",
+        "assignee": "Sarah Johnson",
+        "avatar": "SJ",
+        "tags": ["Render", "Backend"]
+      }
     ]
-}
+  }
